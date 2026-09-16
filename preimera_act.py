@@ -13,8 +13,12 @@ class FiestaPrincipal(QMainWindow):
         self.setPalette(palette)
         boton = QPushButton('pulsa')
         etiqueta = QLabel("ola a todas")
-        self.setCentralWidget(boton)
-        self.setCentralWidget(etiqueta)
+
+        caixaV = QVBoxLayout()
+        contenedor = QWidget()
+        contenedor.setLayout(caixaV)
+        self.setCentralWidget(contenedor)
+
         self.show()
 
 
